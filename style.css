@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Cairo:wght@800&family=Titillium+Web&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.header {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.header-logo img:hover {
+  transform: scale(1.1);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  margin-right: 26px;
+}
+
+.header-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.header-menu ul li a {
+  font-family: 'Average Sans', sans-serif;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.header-menu ul li a:visited, .header-menu ul li a:link {
+  text-decoration: none;
+  color: #F268BE;
+}
+
+.header-menu ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  text-align: center;
+  height: 100%;
+  transition: .2s;
+}
+
+.header-menu ul li:hover {
+  background-color: #feb3d3;
+}
+
+.header-menu ul li:hover > a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.header-twitch {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+
+.header-twitch a {
+  padding: 3px 32px;
+  background-color: #9045ff;
+  border-color: #9045ff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 125%;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.header-twitch a:hover {
+  background-color: #fff;
+  color: #9045ff;
+}
+
+#ref-2, #ref-3, #ref-4, #ref-5 {
+  scroll-margin: 74px;
+}
+
+.cover {
+  width: 100%;
+  height: 600px;
+  background-image: url("img/bg_camioncino_h750.jpeg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 30px;
+  background-size: auto 600px;
+}
+
+.cover-content {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(242, 104, 190, 1) 60%, rgba(255, 110, 201, 0) 60%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover-text {
+  color: #fff;
+  margin-left: 15%;
+  height: 300px;
+  width: 40%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.cover-text h1 {
+  font-family: 'Cairo', sans-serif;
+  font-size: 8vw;
+}
+
+.cover-text h3 {
+  font-family: 'Average Sans', sans-serif;
+  font-size: 2.5vw;
+  margin-top: -36px;
+  margin-bottom: 16px;
+}
+
+.cover-text p {
+  font-size: 130%;
+}
+
+.cover-text p a:link, .cover-text p a:visited, .cover-text p a:hover {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cover-profile {
+  width: 40%;
+  align-self: flex-end;
+  text-align: center;
+}
+
+.cover-profile img {
+  margin-bottom: -6px;
+  width: 80%;
+}
+
+.section {
+  width: 100%;
+  min-height: 300px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+  padding: 0 20%;
+}
+
+.about-me p img {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #fff;
+}
+
+.about-me h2 {
+  font-family: 'Average Sans', sans-serif;
+  font-size: 40px;
+}
+
+.about-me p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.twitch-container {
+  margin: 5%;
+  background-color: #9045ff;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitch-container iframe {
+  margin: 20px;
+}
+
+.twitch-container div {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.twitch-container div h1 {
+  font-family: 'Cairo', sans-serif;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.twitch-altro {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 110%;
+}
+
+.twitch-button {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.orario {
+  font-family: 'Average Sans', sans-serif;
+  font-size: 140%;
+  margin-top: -18px;
+}
+
+.twitch-container div p a, .twitch-container div p a:visited, .twitch-container div p a:link {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.twitch-unisciti {
+  padding: 8px 24px;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 24px;
+  font-family: 'Average Sans', sans-serif;
+  font-size: 110%;
+  transition: .2s;
+}
+
+.twitch-unisciti:link, .twitch-unisciti:visited {
+  text-decoration: none;
+}
+
+.twitch-unisciti:hover {
+  background-color: #fff;
+  color: #9045ff !important;
+}
+
+.collaborazioni {
+  padding: 0 15%;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.collaborazioni-img, .collaborazioni-text {
+  width: 50%;
+}
+
+.collaborazioni-img {
+  display: flex;
+  flex-direction: column;
+}
+
+#flylillo {
+  z-index: 1;
+  width: 240px;
+  border: 5px solid #060d60;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+#flylillo:hover {
+  transform: scale(1.1);
+}
+
+#elementnetwork {
+  z-index: 2;
+  width: 300px;
+  margin: 10px;
+  margin-top: -65px;
+  align-self: flex-end;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+#elementnetwork:hover {
+  transform: scale(1.1);
+}
+
+.collaborazioni-text {
+  padding-left: 16px;
+  margin-left: 4px;
+}
+
+.collaborazioni-text h1 {
+  font-family: 'Cairo', sans-serif;
+  font-size: 36px;
+}
+
+.collaborazioni-text h3 {
+  font-family: 'Average Sans', sans-serif;
+  font-size: 24px;
+}
+
+.collaborazioni-text p {
+  margin-bottom: 12px;
+  font-size: 110%;
+}
+
+.collaborazioni-link:link, .collaborazioni-link:visited {
+  text-decoration: underline;
+  color: #F268BE;
+}
+
+.collaborazioni-link:hover {
+  color: #feb3d3;
+}
+
+.social {
+  background-image: url("img/banner_canale.png");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social h1 {
+  font-family: 'Cairo', sans-serif;
+  padding: 8px;
+  margin: 32px;
+  color: #fff;
+  font-size: 36px;
+  background-color: rgba(55, 55, 55, 0.85);
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+.social-content {
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 54px;
+}
+
+.social-box {
+  width: 170px;
+  height: 260px;
+  background-color: #ffdeec;
+  border: 5px solid #feb3d3;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.discord, .tiktok, .instagram, .youtube {
+  transition: .2s;
+}
+
+.discord:hover, .tiktok:hover, .instagram:hover, .youtube:hover {
+  transform: scale(1.1);
+}
+
+.discord:hover .social-box-content .icon-social {
+  fill: #5865f2;
+}
+
+.discord:hover .social-box-content .text-social {
+  color: #5865f2;
+}
+
+.tiktok:hover .social-box-content .icon-social {
+  fill: #FE2C55;
+}
+
+.tiktok:hover .social-box-content .text-social {
+  color: #FE2C55;
+}
+
+.instagram:hover .social-box-content .icon-social {
+  fill: #FCAF45;
+}
+
+.instagram:hover .social-box-content .text-social {
+  color: #FCAF45;
+}
+
+.youtube:hover .social-box-content .icon-social {
+  fill: #FF0000;
+}
+
+.youtube:hover .social-box-content .text-social {
+  color: #FF0000;
+}
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  fill: #50154d;
+  height: 150px;
+  align-items: center;
+}
+
+.social-box-content {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-social {
+  text-align: center;
+  color: #50154d;
+}
+
+.foot {
+  background-color: #333;
+  color: #777;
+}
+
+table {
+  margin-left: 80px;
+  padding-top: 15px;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px solid #777;
+  color: #aaa;
+}
+
+td, th {
+  width: 200px;
+}
+
+.foot p {
+  text-align: center;
+  padding: 10px;
+}
+
+.foot-links a:hover, .foot-links a:link, .foot-links a:visited {
+  text-decoration: none;
+  color: #777
+}
+
+.medio {
+  display: none;
+}
+
+
+
+@media (max-width: 940px) {
+  .header-content {
+    padding: 0px 20px;
+  }
+
+  .cover {
+    height: 75vw;
+    background-size: auto 75vw;
+  }
+
+  .cover-text {
+    margin-left: 10%;
+    width: 45%;
+  }
+
+  .about-me {
+    padding: 0 15%;
+  }
+
+  .twitch-container {
+    flex-direction: column;
+  }
+
+  .twitch-container div {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .header-logo img:hover, .header-logo img:focus, #flylillo:hover, #flylillo:focus, #elementnetwork:hover, #elementnetwork:focus, .discord:hover, .discord:focus, .tiktok:hover, .tiktok:focus, .instagram:hover, .instagram:focus, .youtube:hover, .youtube:focus {
+    transform: none;
+  }
+
+  .header-menu ul li:hover > a, .header-menu ul li:focus > a {
+    text-decoration: none;
+    color: #F268BE;
+  }
+
+  .header-menu ul li:hover, .header-menu ul li:focus {
+    background-color: #fff;
+  }
+
+  .header-menu ul li:active {
+    background-color: #feb3d3;
+  }
+  
+  .header-menu ul li:active > a {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .twitch-unisciti:focus, .twitch-unisciti:hover {
+    background-color: #9045ff;
+    color: #fff !important;
+  }
+
+  .twitch-unisciti:active {
+    background-color: #fff;
+    color: #9045ff !important;
+  }
+
+  .header-twitch a:hover, .header-twitch a:focus {
+    background-color: #9045ff;
+    color: #fff;
+  }
+
+  .header-twitch a:active {
+    background-color: #fff;
+    color: #9045ff;
+  }
+
+  .discord .social-box-content .icon-social {
+    fill: #5865f2;
+  }
+  
+  .discord .social-box-content .text-social {
+    color: #5865f2;
+  }
+  
+  .tiktok .social-box-content .icon-social {
+    fill: #FE2C55;
+  }
+  
+  .tiktok .social-box-content .text-social {
+    color: #FE2C55;
+  }
+  
+  .instagram .social-box-content .icon-social {
+    fill: #FCAF45;
+  }
+  
+  .instagram .social-box-content .text-social {
+    color: #FCAF45;
+  }
+  
+  .youtube .social-box-content .icon-social {
+    fill: #FF0000;
+  }
+  
+  .youtube .social-box-content .text-social {
+    color: #FF0000;
+  }
+
+  .discord:active .social-box-content .icon-social, .tiktok:active .social-box-content .icon-social, .instagram:active .social-box-content .icon-social, .youtube:active .social-box-content .icon-social {
+    fill: #50154d;
+  }
+
+  .discord:active .social-box-content .text-social, .tiktok:active .social-box-content .text-social, .instagram:active .social-box-content .text-social, .youtube:active .social-box-content .text-social {
+    color: #50154d;
+  }
+
+  .twitch-container iframe {
+    margin-top: 0;
+    width: 98%;
+  }
+
+  .medio {
+    display: flex;
+  }
+
+  .collaborazioni-img, .collaborazioni-text {
+    display: none;
+  }
+
+  .collaborazioni {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+  }
+
+  .collaborazioni-title h1 {
+    text-align: center;
+  }
+
+  .collaborazioni-network, .collaborazioni-flylillo {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+  }
+
+  #elementnetwork {
+    margin: 0;
+    align-self: center;
+    width: 230px;
+  }
+
+  .collaborazioni-network-text {
+    padding-left: 24px;
+  }
+
+  #flylillo {
+    width: 200px;
+    margin: 0;
+  }
+
+  .collaborazioni-flylillo-text {
+    padding-right: 24px;
+  }
+
+  .social-content {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .social-box {
+    height: 122px;
+    width: 40%;
+    margin-bottom: 16px;
+  }
+
+  .social-box-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .header-menu {
+    display: none;
+  }
+
+  .cover {
+    padding-top: 30px;
+    height: 500px;
+  }
+
+  .cover-content {
+    background: linear-gradient(to right, rgba(242, 104, 190, 1) 60%, rgba(255, 110, 201, 1) 100%);
+  }
+
+  .cover-text {
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .cover-text h1 {
+    font-size: 62px;
+  }
+
+  .cover-text h3 {
+    font-size: 26px;
+  }
+
+  .cover-profile {
+    display: none;
+  }
+
+  .about-me p img {
+    width: 160px;
+  }
+
+  .about-me h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .twitch-container div h1 {
+    font-size: 42px;
+  }
+
+  .orario {
+    margin-top: -8px;
+  }
+
+  .twitch-container iframe {
+    width: auto;
+    height: auto;
+  }
+
+  .collaborazioni-network, .collaborazioni-flylillo {
+    flex-direction: column;
+  }
+
+  .collaborazioni-network-text {
+    order: 1;
+  }
+
+  .collaborazioni-network-img {
+    order: 2;
+  }
+
+  .collaborazioni-network-text, .collaborazioni-flylillo-text {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .social-content {
+    flex-direction: column;
+  }
+
+  .social-box {
+    width: 90%;
+  }
+
+  .social-box-content {
+    justify-content: space-around;
+  }
+
+  table {
+    margin-left: 12px;
+    width: 80%;
+  }
+
+  td, th {
+    font-size: 12px;
+    width: 50%;
+  }
+}
