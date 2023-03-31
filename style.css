@@ -222,6 +222,7 @@
 
 .twitch-container {
   width: max-content;
+  max-width: 96%;
   background-color: #9045ff;
   border-radius: 20px;
   color: #fff;
@@ -232,6 +233,8 @@
 
 .twitch-container iframe {
   margin: 20px;
+  width: 540px;
+  height: 329px;
 }
 
 .twitch-container div {
