@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Cairo:wght@800&family=Titillium+Web&display=swap');
 
+@font-face {
+  font-family: BorisBlackBloxx;
+  src: url("fonts/BorisBlackBloxx.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -151,8 +156,10 @@
 }
 
 .cover-text h1 {
-  font-family: 'Cairo', sans-serif;
-  font-size: 8vw;
+  font-family: BorisBlackBloxx, sans-serif;
+  font-size: 6vw;
+  color: #F268BE;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
 }
 
 .cover-text h3 {
