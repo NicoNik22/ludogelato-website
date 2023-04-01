@@ -523,6 +523,16 @@ td, th {
     width: 45%;
   }
 
+  .cover-profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+  }
+
+  .cover-profile img {
+    max-width: 80%;
+  }
+
   .about-me {
     padding: 0 15%;
   }
@@ -711,7 +721,7 @@ td, th {
   }
 
   .cover-text h1 {
-    font-size: 62px;
+    font-size: 13vw;
   }
 
   .cover-text h3 {
